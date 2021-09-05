@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">EducationalApp</string>
+    <string name="calculate_score">Calculate Score</string>
+    <string name="_10000">10000</string>
+    <string name="_5000">5000</string>
+    <string name="_1000">1000</string>
+    <string name="a_mischief">A Mischief</string>
+    <string name="a_chaos">A Chaos</string>
+    <string name="a_pack">A Pack</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+    <string name="_1_what_animal_has_a_distinctive_scent_mark_that_smells_like_popcorn">1 - What animal has a distinctive scent mark that smells like popcorn ?</string>
+    <string name="_2_how_many_types_of_flamingo_are_there">2 - How many types of flamingo are there?</string>
+    <string name="_3_is_cheetah_the_fastest_predator_on_earth">3 - Is Cheetah the fastest predator on earth ?</string>
+    <string name="_4_is_the_name_of_baby_dolphin_called_calf">4 - Is the name of baby Dolphin called Calf ?</string>
+    <string name="_5_what_is_a_group_of_rats_called">5 - What is a group of rats called ?</string>
+    <string name="_6_how_many_sri_lankan_leopards_are_there_left_in_the_wild">6 - How many Sri Lankan Leopards are there left in the wild ?</string>
+</resources>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text_containerAll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Primary"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/question1_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/question_text_height"
+                android:background="@color/Secondary"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/question1_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/_1_what_animal_has_a_distinctive_scent_mark_that_smells_like_popcorn"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/answer_q1_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:autofillHints="A Mammal" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/question2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/question_text_height"
+                android:background="@color/Secondary"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/question2_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/_2_how_many_types_of_flamingo_are_there"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/answer_q2_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:autofillHints="A Number" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/question3_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/question_text_height"
+                android:background="@color/Secondary"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/question3_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/_3_is_cheetah_the_fastest_predator_on_earth"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/checklist_q3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/answer_text_height"
+                    android:background="@color/Secondary"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/yes_checkbox_q3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/no_checkbox_q3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question4_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/question_text_height"
+                android:background="@color/Secondary"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/question4_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Is the name of a baby Dolphin Called Foal ?"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/checklist_q4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/answer_text_height"
+                    android:background="@color/Secondary"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/yes_checkbox_q4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/no_checkbox_q4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/white" />
+
+
+            <LinearLayout
+                android:id="@+id/question5_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/question_text_height"
+                android:background="@color/Secondary"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/question5_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/_5_what_is_a_group_of_rats_called"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/text_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/answer_text_height"
+                    android:background="@color/Secondary"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/radio_q5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/first_radio_q5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/a_pack"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/second_radio_q5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/a_chaos"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/third_radio_q5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/a_mischief"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/white" />
+
+
+            <LinearLayout
+                android:id="@+id/question6_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/question_text_height"
+                android:background="@color/Secondary"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/question6_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/_6_how_many_sri_lankan_leopards_are_there_left_in_the_wild"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/text_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/answer_text_height"
+                    android:background="@color/Secondary"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/radio_q6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/first_radio_q6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/_1000"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/second_radio_q6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/_5000"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/third_radio_q6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/_10000"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/scoreCalculation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/Button"
+                android:text="@string/calculate_score"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
