@@ -42,10 +42,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
+                    android:autofillHints="A Mammal"
                     android:textAppearance="?android:textAppearanceMedium"
                     android:textColor="@android:color/black"
-                    android:textStyle="bold"
-                    android:autofillHints="A Mammal" />
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -77,10 +77,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
+                    android:autofillHints="A Number"
                     android:textAppearance="?android:textAppearanceMedium"
                     android:textColor="@android:color/black"
                     android:textStyle="bold"
-                    android:autofillHints="A Number" />
+                    />
 
             </LinearLayout>
 
@@ -102,7 +103,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="@string/_3_is_cheetah_the_fastest_predator_on_earth"
+                    android:text="@string/select_deserts_from_the_following"
                     android:textAppearance="?android:textAppearanceMedium"
                     android:textColor="@android:color/black"
                     android:textStyle="bold" />
@@ -115,21 +116,31 @@
                     android:orientation="horizontal">
 
                     <CheckBox
-                        android:id="@+id/yes_checkbox_q3"
+                        android:id="@+id/checkbox_q3_A"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/yes"
+                        android:text="@string/cheese_cake"
                         android:textAppearance="?android:textAppearanceMedium"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <CheckBox
-                        android:id="@+id/no_checkbox_q3"
+                        android:id="@+id/checkbox_q3_B"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/no"
+                        android:text="@string/chocolate"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_q3_C"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/soup"
                         android:textAppearance="?android:textAppearanceMedium"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
@@ -156,7 +167,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="Is the name of a baby Dolphin Called Foal ?"
+                    android:text="@string/select_all_metals_from_following"
                     android:textAppearance="?android:textAppearanceMedium"
                     android:textColor="@android:color/black"
                     android:textStyle="bold" />
@@ -169,21 +180,31 @@
                     android:orientation="horizontal">
 
                     <CheckBox
-                        android:id="@+id/yes_checkbox_q4"
+                        android:id="@+id/checkbox_q4_A"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/yes"
+                        android:text="@string/wood"
                         android:textAppearance="?android:textAppearanceMedium"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <CheckBox
-                        android:id="@+id/no_checkbox_q4"
+                        android:id="@+id/checkbox_q4_B"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/no"
+                        android:text="@string/iron"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_q4_C"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/gold"
                         android:textAppearance="?android:textAppearanceMedium"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />

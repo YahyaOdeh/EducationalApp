@@ -14,67 +14,101 @@ public class MainActivity extends AppCompatActivity {
 
     public int scoreCounter = 0;
     private EditText q1AnswerText, q2AnswerText;
-    private CheckBox q3Y, q4N;
+    private CheckBox checkBoxQ3A, checkBoxQ3B, checkBoxQ4B, checkBoxQ4C;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RadioButton q5Third = findViewById(R.id.third_radio_q5);
+        RadioButton radioQ5Third = findViewById(R.id.third_radio_q5);
 
-        RadioButton q6First = findViewById(R.id.first_radio_q6);
+        RadioButton radioQ6First = findViewById(R.id.first_radio_q6);
 
         q1AnswerText = findViewById(R.id.answer_q1_text);
 
         q2AnswerText = findViewById(R.id.answer_q2_text);
 
-        q3Y = findViewById(R.id.yes_checkbox_q3);
+        checkBoxQ3A = findViewById(R.id.checkbox_q3_A);
 
-        q4N = findViewById(R.id.no_checkbox_q4);
+        checkBoxQ3B = findViewById(R.id.checkbox_q3_B);
+
+        checkBoxQ4B = findViewById(R.id.checkbox_q4_B);
+
+        checkBoxQ4C = findViewById(R.id.checkbox_q4_C);
 
         Button calculate = findViewById(R.id.scoreCalculation);
 
         calculate.setOnClickListener(v -> {
 
-            if (q1AnswerText.getText().toString().contains("Binturong") || q1AnswerText.getText().toString().contains("binturong"))
+            if (q1AnswerText.getText().toString().equalsIgnoreCase(getString(R.string.mammal))) {
                 scoreCounter++;
+            } else {
 
-            if (q2AnswerText.getText().toString().contains("6"))
-                scoreCounter++;
+                Toast.makeText(getApplicationContext(), R.string.warningAtQ1, Toast.LENGTH_SHORT).show();
 
-            if (q3Y.isChecked())
-                scoreCounter++;
+            }
 
-            if (q4N.isChecked())
+            if (q2AnswerText.getText().toString().equals(getString(R.string.six))) {
                 scoreCounter++;
+            } else {
 
-            if (q5Third.isChecked())
-                scoreCounter++;
+                Toast.makeText(getApplicationContext(), R.string.warningAtQ2, Toast.LENGTH_SHORT).show();
 
-            if (q6First.isChecked())
+            }
+
+            if (checkBoxQ3A.isChecked() && checkBoxQ3B.isChecked()) {
                 scoreCounter++;
+            } else {
+
+                Toast.makeText(getApplicationContext(), R.string.warningAtQ3, Toast.LENGTH_SHORT).show();
+
+            }
+
+            if (checkBoxQ4B.isChecked() && checkBoxQ4C.isChecked()) {
+                scoreCounter++;
+            } else {
+
+                Toast.makeText(getApplicationContext(), R.string.warningAtq4, Toast.LENGTH_SHORT).show();
+
+            }
+
+            if (radioQ5Third.isChecked()) {
+                scoreCounter++;
+            } else {
+
+                Toast.makeText(getApplicationContext(), R.string.warningAtQ5, Toast.LENGTH_SHORT).show();
+
+            }
+
+            if (radioQ6First.isChecked()) {
+                scoreCounter++;
+            } else {
+
+                Toast.makeText(getApplicationContext(), R.string.warningAtQ6, Toast.LENGTH_SHORT).show();
+
+            }
 
             switch (scoreCounter) {
 
                 case (1):
 
                 case (2):
-                    Toast.makeText(getApplicationContext(), "Poor Score of " + scoreCounter + " Try Harder",
+                    Toast.makeText(getApplicationContext(), getString(R.string.poor_score) + scoreCounter + getString(R.string.try_harder),
                             Toast.LENGTH_SHORT).show();
                     break;
 
                 case (3):
 
                 case (4):
-                    Toast.makeText(getApplicationContext(), "Not bad you Scored " + scoreCounter + " But Try Harder",
+                    Toast.makeText(getApplicationContext(), getString(R.string.not_bad) + scoreCounter + getString(R.string.try_harder),
                             Toast.LENGTH_SHORT).show();
                     break;
 
                 case (5):
 
                 case (6):
-                    Toast.makeText(getApplicationContext(), "Good Job you Scored " + scoreCounter + " You did IT!",
+                    Toast.makeText(getApplicationContext(), getString(R.string.good_job) + scoreCounter + getString(R.string.you_did_it),
                             Toast.LENGTH_SHORT).show();
                     break;
 
