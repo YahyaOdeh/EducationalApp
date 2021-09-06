@@ -11,10 +11,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-
     public int scoreCounter = 0;
     private EditText q1AnswerText, q2AnswerText;
-    private CheckBox checkBoxQ3A, checkBoxQ3B, checkBoxQ4B, checkBoxQ4C;
+    private CheckBox checkBoxQ3A, checkBoxQ3B, checkBoxQ3C, checkBoxQ4A, checkBoxQ4B, checkBoxQ4C;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
         checkBoxQ3A = findViewById(R.id.checkbox_q3_A);
 
         checkBoxQ3B = findViewById(R.id.checkbox_q3_B);
+
+        checkBoxQ3C = findViewById(R.id.checkbox_q3_C);
+
+        checkBoxQ4A = findViewById(R.id.checkbox_q4_A);
 
         checkBoxQ4B = findViewById(R.id.checkbox_q4_B);
 
@@ -57,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
-            if (checkBoxQ3A.isChecked() && checkBoxQ3B.isChecked()) {
+            if (checkBoxQ3A.isChecked() && checkBoxQ3B.isChecked() && !checkBoxQ3C.isChecked()) {
                 scoreCounter++;
             } else {
 
@@ -65,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
-            if (checkBoxQ4B.isChecked() && checkBoxQ4C.isChecked()) {
+            if (!checkBoxQ4A.isChecked() && checkBoxQ4B.isChecked() && checkBoxQ4C.isChecked()) {
                 scoreCounter++;
             } else {
 
@@ -118,5 +121,4 @@ public class MainActivity extends AppCompatActivity {
 
         });
     }
-
 }
